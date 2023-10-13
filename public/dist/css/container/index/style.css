@@ -1,0 +1,65 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  gap: 32px;
+}
+.form__title {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: papayawhip;
+  display: flex;
+  padding-left: 16px;
+  justify-content: flex-start;
+  align-items: center;
+  height: 50px;
+  width: 400px;
+  max-width: 100%;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #ddd;
+}
+.form__content {
+  display: grid;
+  gap: 24px;
+}
+.form__fild {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.form__label {
+  font-size: 20px;
+}
+.form__input {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+.form__input:hover {
+  background: aqua;
+}
+.form__input:active {
+  background: blueviolet;
+}
+.form__button {
+  background-color: palevioletred;
+  color: green;
+  border: 1px solid #ddd;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.user-list li {
+  padding-right: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+/*# sourceMappingURL=style.css.map */
