@@ -1,0 +1,74 @@
+@use '../../lib/service.scss' as s;
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: s.space(8);
+   gap: s.space(8);
+
+   &__title {
+    font-size: 24px ;
+    font-weight: bold;
+    background-color: papayawhip;
+    display: flex;
+    padding-left: s.space(4);
+    justify-content:flex-start;
+    align-items: center;
+    height: 50px;
+    width: 400px;
+    max-width: 100%;
+    
+    padding-bottom: s.space(1);
+    // margin-bottom: s.space(2);
+    border-bottom: 1px solid s.color('light');
+   }
+
+   &__content {
+display: grid;
+gap: s.space(6);
+   }
+
+   &__fild {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+   }
+   &__label {
+    font-size: 20px;
+
+   }
+
+   &__input {
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+   }
+  &__input:hover {
+   background:  aqua;
+}
+&__input:active {
+   background:  blueviolet;
+}
+   &__button {
+      background-color: palevioletred;
+      color: green;
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 10px ;
+    font-size: 24px;
+    font-weight: bold;
+   }
+}
+main {
+   display: flex;
+   flex-direction: column;
+   gap: s.space(10);
+}
+.user-list{
+   li{
+      padding-right: 15px;
+      padding-top: 5px;
+      padding-bottom:5px;
+      // margin: 10px;
+   }
+}
