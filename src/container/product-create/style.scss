@@ -1,0 +1,103 @@
+@use '../../lib/service.scss' as s;
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: s.space(8);
+   gap: s.space(8);
+
+   &__title {
+    font-size: 32px ;
+    font-weight: bold;
+   //  background-color: papayawhip;
+    display: flex;
+    padding-left: s.space(2);
+    justify-content:flex-start;
+    align-items: center;
+    height: 50px;
+   //  width: 400px;
+    max-width: 100%;
+    
+    padding-bottom: s.space(1);
+    // margin-bottom: s.space(2);
+    border-bottom: 1px solid s.color('light');
+    
+    
+   }
+
+   &__content {
+display: grid;
+gap: s.space(6);
+   }
+
+   &__fild {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+   }
+   &__flex {
+      display: grid;
+  grid-template-columns: 1fr 1fr ;
+   gap: s.space(5);
+   justify-content:space-between;
+  
+  }
+
+   .comment {
+      color: #888; 
+      font-size: 12px; 
+      margin-top: 5px; 
+    }
+   
+     
+    
+   &__label {
+    font-size: 20px;
+
+   }
+
+   &__input {
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(242, 209, 209, 0.5);
+
+ 
+   }
+  &__input:hover {
+   background:  rgb(239, 246, 246);
+}
+&__input:active {
+   background:  rgb(232, 222, 241);
+}
+   &__button {
+      background-color: rgb(25, 49, 234);
+    color: s.color('light');
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 10px ;
+    font-size: 24px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px rgba(109, 67, 216, 0.5);
+
+   }
+
+}
+main {
+   display: flex;
+   flex-direction: column;
+   max-width: 800px;
+   margin: s.space(4);
+   gap: s.space(10);
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}
+// .user-list{
+//    li{
+//       padding-right: 15px;
+//       padding-top: 5px;
+//       padding-bottom:5px;
+//       // margin: 10px;
+//    }
+// }

@@ -1,0 +1,169 @@
+@use '../../lib/service.scss' as s;
+
+.alert {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: s.space(10);
+    gap: s.space(10);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+ border-radius: 10px;
+}
+.alert__button {
+background-color: blue;
+color: white;
+border: 1px solid s.color('light');
+padding: s.space(2);
+border-radius: 10px ;
+font-size: 16px;
+font-weight: 400;
+align-items: center;
+width: 300px;
+margin: 16px;
+}
+.alert__info {
+    display: flex;
+    flex-direction: column;
+    padding-left: s.space(1);
+    justify-content:space-between;
+align-items: flex-start;
+    height: 50px;
+    width: 300px;
+    max-width: 100%;   
+    padding: s.space(4);
+    padding-left: s.space(4);
+    gap:  s.space(2);;
+    height: 80px;
+
+}
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+  
+}
+p {
+    font-size: 16px;
+    color: #888; 
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.delete__button{ 
+    background-color: red;
+    color: s.color('light');
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 10px ;
+    font-size: 24px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px rgba(109, 67, 216, 0.5);
+
+}
+.text__deletebutton{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+
+.form {
+    display: flex;
+    flex-direction: column;
+    padding: s.space(8);
+   gap: s.space(8);
+
+   &__title {
+    font-size: 32px ;
+    font-weight: bold;
+    display: flex;
+    padding-left: s.space(2);
+    justify-content:flex-start;
+    align-items: center;
+    height: 50px;
+   //  width: 400px;
+    max-width: 100%;
+    
+    padding-bottom: s.space(1);
+    // margin-bottom: s.space(2);
+    border-bottom: 1px solid s.color('light');
+    
+    
+   }
+
+   &__content {
+display: grid;
+gap: s.space(6);
+   }
+
+   &__fild {
+    display: flex;
+    flex-direction: column;
+    gap: s.space(2);
+   }
+   &__flex {
+      display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+   gap: s.space(5);
+   justify-content:space-between;
+  
+  }
+
+   .comment {
+      color: #888; 
+      font-size: 12px; 
+      margin-top: 5px; 
+    }
+   
+     
+    
+   &__label {
+    font-size: 20px;
+
+   }
+
+   &__input {
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(242, 209, 209, 0.5);
+
+ 
+   }
+  &__input:hover {
+   background:  rgb(239, 246, 246);
+}
+&__input:active {
+   background:  rgb(232, 222, 241);
+}
+   &__button {
+      background-color: rgb(25, 49, 234);
+    color: s.color('light');
+    border: 1px solid s.color('light');
+    padding: s.space(2);
+    border-radius: 10px ;
+    font-size: 24px;
+    font-weight: 400;
+    box-shadow: 0px 0px 10px rgba(109, 67, 216, 0.5);
+
+   }
+
+}
+.button__flex {
+    display: grid;
+grid-template-columns: 1fr 1fr ;
+ gap: s.space(5);
+ justify-content:space-between;
+}
+main {
+   display: flex;
+   flex-direction: column;
+   max-width: 1000px;
+   margin: s.space(4);
+   gap: s.space(10);
+   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+}

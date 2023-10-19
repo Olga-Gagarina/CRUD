@@ -1,0 +1,87 @@
+{{!
+Це код container файлу для index сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
+}}
+
+{{!-- <div class="card__box">
+    <h1>Список товарів</h1>
+
+    {{#with data.products}}
+    {{#if isEmpty}}
+    <mark class="card__mark">Товар відсутній</mark>
+
+    {{else}}
+    <div class="card__boxes">
+        {{#each list}}
+        <div class="card">
+            <ul>
+
+
+                <li>
+
+                    <h2 class="card__title"> {{name}}</h2>
+                    <p class="card__description">{{description}} </p>
+                    <div class="card__id">ID:{{id}}</div>
+                    <div class="card__liner">
+                        <div class="card__price">{{price}}₴ </div>
+
+                        <button class="card__button">
+                            <a href="/product-edit?id={{id}}" class="card__link">Редагувати</a>
+                        </button>
+                    </div>
+                </li>
+
+
+            </ul>
+
+        </div>
+
+        {{/each}}
+    </div>
+    {{/if}}
+    {{/with}}
+
+    <a href="/product-create">Повернутися назад</a>
+</div> --}}
+
+{{!
+Цей код містить лише те, що буде виводитись в
+
+<body>
+    Адже наш layout/default.hbs має вже структуру HTML
+    }}
+
+
+
+    <body>
+        <div class="card__box">
+            <h1>Список товарів</h1>
+            {{#with data.products}}
+            {{#if isEmpty}}
+            <mark class="card__mark">Товар відсутній</mark>
+            {{else}}
+            <div class="card__boxes">
+                {{#each list}}
+                {{>product-card data=this}}
+                {{!-- <div class="card">
+                    <ul>
+                        <li>
+                            <h2 class="card__title">{{name}}</h2>
+                            <p class="card__description">{{description}}</p>
+                            <div class="card__id">ID: {{id}}</div>
+                            <div class="card__liner">
+                                <div class="card__price">{{price}}₴</div>
+                                <button class="card__button">
+                                    <a href="/product-edit?id={{id}}" class="card__link">Редагувати</a>
+                                </button>
+                            </div>
+                        </li>
+                    </ul>
+                </div> --}}
+                {{/each}}
+            </div>
+            {{/if}}
+            {{/with}}
+            <a class="card__revers" href="/product-create">Повернутися назад</a>
+        </div>
+    </body>
