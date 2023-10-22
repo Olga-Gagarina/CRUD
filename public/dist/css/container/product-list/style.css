@@ -1,0 +1,109 @@
+@charset "UTF-8";
+.card__box {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 10px;
+  margin: 20px;
+  margin-bottom: 0;
+}
+
+.card__boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card__mark {
+  font-size: 28px;
+  width: 300px;
+  padding: 10px;
+  font-weight: bold;
+  color: #ff0000;
+}
+
+h1 {
+  font-size: 32px;
+  color: blue;
+  font-weight: 600;
+  padding: 15px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 400px;
+  width: calc(33.33% - 20px); /* 33.33% для трьох карточок в ряд, 20px - відступ між карточками */
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 5px;
+  gap: 10px;
+}
+
+.card p {
+  word-wrap: break-word;
+  gap: 10px;
+  line-height: 1.5;
+}
+
+.card__title {
+  font-size: 20px;
+  margin: 0;
+  font-weight: 500;
+  color: rgba(22, 9, 9, 0.8);
+}
+
+.card__description {
+  font-size: 14px;
+  margin: 10px 0;
+  color: rgba(22, 9, 9, 0.8);
+}
+
+.card__button {
+  color: blue;
+  border: none;
+  padding: 10px 10px 0 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card__price {
+  font-size: 16px;
+  font-weight: bold;
+  padding-top: 10px;
+  color: rgba(32, 2, 22, 0.8);
+}
+
+.card__id {
+  color: #777;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.card__link {
+  text-decoration: none;
+  color: blue;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.card__liner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-bottom: 5px;
+}
+
+.card__revers {
+  text-decoration-color: #ff0000;
+  color: #666;
+  font-size: 24px;
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */

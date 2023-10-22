@@ -1,0 +1,59 @@
+<main class="main">
+    <section>
+        <div class=" form">
+            <h1 class="form__title">Інформація про товар </h1>
+            {{#with data}}
+            <form method="POST" action="/product-edit">
+                <div class="form__content">
+                    <div class="form__flex">
+                        <div class="form__fild">
+
+
+                            <label for="name" class="form__label"> Назва товару </label>
+                            <input type="text" name="name" value="{{name}}" class="form__input">
+                        </div>
+                        <div class="form__fild">
+                            <label for="price" class="form__label"> Ціна </label>
+                            <input type="number" name="price" value="{{price}}" class="form__input">
+                        </div>
+                        <div class="form__fild">
+                            <label for="id" class="form__label"> ID </label>
+                            <input type="number" name="id" value="{{id}}" readonly class="form__input">
+                        </div>
+
+                    </div>
+                    <div class="form__fild">
+                        <label for="description" class="form__label">Короткий опис товару </label>
+                        <input type="text" name="description" value="{{description}}" class="form__input">
+                        <div class="comment">Відображується в картці товару</div>
+                    </div>
+                    <div class="button__flex">
+                        <button class="form__button click"> Зберегти оновлення</button>
+                        <button class="delete__button">
+                            <a href="/product-delete?id={{id}}" class="text__deletebutton">Видалити товар</a>
+                        </button>
+
+                    </div>
+
+
+                </div>
+            </form>
+            {{/with}}
+        </div>
+    </section>
+
+</main>
+{{!-- <div class="alert">
+    <div class="alert__info">
+        <h1 class="alert__title"> Редагування товару </h1>
+        <p>{{info}}</p>
+    </div>
+
+    {{!-- <h1 class="alert__title"> {{info}} </h1> --}}
+    {{!-- <button class="alert__button">
+        <a href="/product-list">Повернутися назад</a>
+
+    </button> --}}
+
+    {{!--
+</div> --}}
